@@ -1,0 +1,18 @@
+{
+  "name": "Vacation-Request-Application",
+  "version": "0.0.0",
+  "description": "Simple vacations requests application.",
+  "main": "web-server.js",
+  "author": "Feel It Services",
+  "dependencies": {
+    "express": "~3.4.4"
+  },
+  "devDependencies": {
+    "karma": "^0.12.1",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-jasmine": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "requirejs": "^2.1.11",
+    "karma-requirejs": "^0.2.1"
+  }
+}
