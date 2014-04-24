@@ -1,4 +1,5 @@
-thinkster-firebase-tutorial
-===========================
+University Project 
 
-This repository is the starting point for the thinkster.io Firebase AngularJS tutorial
+=================================================
+
+this is a simple online lodging application  build with angular
