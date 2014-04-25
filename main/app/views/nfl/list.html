@@ -1,6 +1,6 @@
 <div data-ng-controller="NFLController">
 	<h2>NFL Teams</h2>
-	<div data-ng-repeat="nflteam in nflteams">
-		<a href="#/nflteams/{{ $index }}">{{nflteam.team}} {{nflteam.mascot}}</a>
+	<div data-ng-repeat="rooms in roomsDetails">
+		<a href="#/rooms/{{ $index }}"> {{rooms.team}}</a>
 	</div>
 </div>

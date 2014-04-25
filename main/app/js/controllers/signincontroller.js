@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fantasyApp.controllers.signin', ['fantasyApp.services.login'])
+angular.module('lodgiApp.controllers.signin', ['lodgiApp.services.login'])
   .controller('SigninCtrl', ['$scope', 'loginService', '$location',
     function($scope, loginService, $location) {
        

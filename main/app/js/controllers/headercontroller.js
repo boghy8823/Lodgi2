@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fantasyApp.controllers.header', ['fantasyApp.services.login'])
+angular.module('lodgiApp.controllers.header', ['lodgiApp.services.login'])
   .controller('HeaderController', ['$scope', '$location', 'loginService', 'angularFire', 'FBURL', 
     function($scope, $location, loginService, angularFire, FBURL) {
 

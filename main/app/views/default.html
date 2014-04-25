@@ -1,1 +1,8 @@
-<h2>Online lodging application</h2>
+<div data-ng-controller="NFLController">
+    <h2>Online lodging application</h2>
+    <h3>This is the main view</h3>
+  
+    <div data-ng-repeat="rooms in roomsDetails">
+	    <a href="#/rooms/{{ $index }}">{{rooms.team}} </a>
+    </div>
+</div>

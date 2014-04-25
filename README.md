@@ -1,7 +1,7 @@
-Lodgi
+lodgiApp
 
 
 -----------------------------------
-The Online Lodging Application
+The Online lodging Application
 
 University project built with AngularJs

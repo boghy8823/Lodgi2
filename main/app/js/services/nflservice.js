@@ -1,7 +1,7 @@
-angular.module('fantasyApp.services.nfl', [])
-	.factory('NFL', function() {
-		var NFL = {};
-		NFL.teams = [
+angular.module('lodgiApp.services.nfl', [])
+	.factory('ROOMS', function() {
+		var ROOMS = {};
+	    ROOMS.details = [
 					  {"abbr":"ARI", "team":"Arizona",        "mascot": "Cardinals",  "conference":"NFC", "division": "West"},
 				      {"abbr":"ATL", "team":"Atlanta",        "mascot": "Falcons",    "conference":"NFC", "division": "South"},
 				      {"abbr":"BAL", "team":"Baltimore",      "mascot": "Ravens",     "conference":"AFC", "division": "North"},
@@ -36,14 +36,14 @@ angular.module('fantasyApp.services.nfl', [])
 				      {"abbr":"WAS", "team":"Washington",     "mascot": "Redskins",    "conference":"NFC", "division": "East"}
 		];
 
-		NFL.positions = [ 
-			  {"abbr":"QB",  "pos":"Quarterback"},
-		      {"abbr":"RB",  "pos":"Runningback"},
-		      {"abbr":"WR",  "pos":"Wide Receiver"},
-		      {"abbr":"TE",  "pos":"Tight End"},
-		      {"abbr":"K",   "pos":"Kicker"},
-		      {"abbr":"D/ST","pos":"Defense/Special Teams"}
-		];
+		//ROOMS.positions = [ 
+		//	  {"abbr":"QB",  "pos":"Quarterback"},
+		//      {"abbr":"RB",  "pos":"Runningback"},
+		//      {"abbr":"WR",  "pos":"Wide Receiver"},
+		//      {"abbr":"TE",  "pos":"Tight End"},
+		//      {"abbr":"K",   "pos":"Kicker"},
+		//      {"abbr":"D/ST","pos":"Defense/Special Teams"}
+		//];
 
-		return NFL;
+		return ROOMS;
 	});

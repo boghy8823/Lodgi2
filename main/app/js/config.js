@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('fantasyApp.config', [])
+angular.module('lodgiApp.config', [])
 
 app.config(['$routeProvider', 
     function($routeProvider) {
@@ -9,8 +9,8 @@ app.config(['$routeProvider',
       .when('/',        { templateUrl: 'views/default.html' })
       .when('/signin',  { templateUrl: 'views/users/signin.html' })
       .when('/signup',  { templateUrl: 'views/users/signup.html' })
-      .when('/nflteams',  { templateUrl: 'views/nfl/list.html', authRequired: true })
-      .when('/nflteams/:nflTeamId',  { templateUrl: 'views/nfl/view.html', authRequired: true })
+      .when('/nflteams',  { templateUrl: 'views/nfl/list.html', authRequired: false })
+      .when('/rooms/:nflTeamId',  { templateUrl: 'views/nfl/view.html', authRequired: false })
       .otherwise(       { redirectTo: '/' });
     }])
   
@@ -22,7 +22,6 @@ app.config(['$routeProvider',
     }])
 
   // your Firebase URL goes here
-  // should look something like: https://blahblahblah.firebaseio.com
   .constant('FBURL', 'https://fantasyfootball2014.firebaseio.com/')
 
 
