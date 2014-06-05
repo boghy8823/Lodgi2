@@ -7,5 +7,6 @@ var app = angular.module('lodgiApp',
   , 'lodgiApp.controllers.signin'
   , 'lodgiApp.controllers.signup'
   , 'lodgiApp.controllers.nfl'
+  , 'lodgiApp.controllers.leagues'
   , 'firebase', 'ui.bootstrap', 'ngRoute']
   )

@@ -16,7 +16,16 @@ angular.module('lodgiApp.controllers.header', ['lodgiApp.services.login'])
         {
           "title": "NFL Teams",
           "link": "/nflteams"
-        }
+        },
+        {
+            "title": "Create New",
+            "link": "/leagues/create"
+        },
+        {
+             "title": "All Entries",
+             "link": "/leagues"
+        },
+
       ];
 
       $scope.$on('$routeChangeSuccess', function() {

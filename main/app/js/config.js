@@ -10,7 +10,11 @@ app.config(['$routeProvider',
       .when('/signin',  { templateUrl: 'views/users/signin.html' })
       .when('/signup',  { templateUrl: 'views/users/signup.html' })
       .when('/nflteams',  { templateUrl: 'views/nfl/list.html', authRequired: false })
-      .when('/rooms/:nflTeamId',  { templateUrl: 'views/nfl/view.html', authRequired: false })
+      .when('/rooms/:nflTeamId', { templateUrl: 'views/nfl/view.html', authRequired: false })
+      .when('/leagues', { templateUrl: 'views/leagues/list.html', authRequired: false })
+      .when('/leagues/create', { templateUrl: 'views/leagues/edit.html', authRequired: false })
+      .when('/leagues/:leagueId', { templateUrl: 'views/leagues/view.html', authRequired: false })
+      .when('/leagues/:leagueId/edit', { templateUrl: 'views/leagues/edit.html', authRequired: false })
       .otherwise(       { redirectTo: '/' });
     }])
   
