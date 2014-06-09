@@ -5,4 +5,10 @@ angular.module('lodgiApp.controllers.nfl', ['lodgiApp.services.nfl'])
 		function($scope, $routeParams, ROOMS) {
 		    $scope.description = ROOMS.description;
 			//$scope.description = ROOMS.description[$routeParams['roomId']];
+
+			$(window).load(function() {
+			  $('.flexslider').flexslider({
+			    animation: "slide"
+			  });
+			});
 		}]);
