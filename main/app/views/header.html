@@ -1,5 +1,5 @@
-<div class="navbar-inner ng-scope" ng-controller="HeaderController">
-  <ul class="nav">
+
+  <!-- <ul class="nav">
     <li><a class="brand" href="#/">lodgiApp</a></li>
      <li data-ng-repeat="entry in navbarEntries" data-ng-show="auth"  data-ng-class="{ active: entry.isActive }">
       <a href="#{{entry.link}}">{{entry.title}}</a>
@@ -20,5 +20,77 @@
           <li><a href="#/bookings" >Bookings</a></li>
       </ul>
     </li>
-  </ul>
+  </ul> -->
+  <div class="top-header" id="header" ng-controller="HeaderController">
+        <div class="wrap">
+        <div class="top-header-left">
+          <ul >
+            <li><a href="#/signin"><span> </span> User Login</a></li>
+            <li><a href="#"><span> </span> Admin Login</a></li>
+            <li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="#"> Register</a></li>
+            <div class="clear"> </div>
+          </ul>
+        </div>
+        <div class="top-header-right">
+          <ul>
+            <li><a class="face" href="#"><span> </span></a></li>
+            <li><a class="twit" href="#"><span> </span></a></li>
+            <li><a class="thum" href="#"><span> </span></a></li>
+            <div class="clear"> </div>
+          </ul>
+        </div>
+        <div class="clear"> </div>
+      </div>
+      </div>
+      <div class="header">
+        <div class="wrap">
+        <!--- start-logo---->
+        <div class="logo">
+          <a href="#/"><img src="images/logo.jpg" title="Nelo"></a>
+        </div>
+        <!--- //End-logo---->
+        <!--- start-top-nav---->
+        <div class="top-nav">
+            <ul class="flexy-menu thick orange">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="bookings.html">Bookings</a>
+                <ul>
+                <li><a href="#">Dropdown item</a></li>
+                <li><a href="#">Dropdown item</a></li>
+                <li><a href="#">Dropdown item</a>
+                  <ul>
+                    <li><a href="#">Dropdown item</a></li>
+                    <li><a href="#">Dropdown item</a>
+                      <ul>
+                        <li><a href="#">Dropdown item</a></li>
+                        <li><a href="#">Dropdown item</a></li>
+                        <li><a href="#">Dropdown item</a></li>
+                        <li><a href="#">Dropdown item</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Dropdown item</a></li>
+                    <li><a href="#">Dropdown item</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown item</a></li>
+                <li><a href="#">Dropdown item</a></li>
+              </ul>
+              </li>
+              <li><a href="ofertespeciale.html">Oferte Speciale</a></li>
+              <li><a href="#/signin">Contact</a></li>
+            </ul>
+            <div class="search-box">
+              <div id="sb-search" class="sb-search">
+                <form class="ng-pristine ng-valid">
+                  <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                  <input class="sb-search-submit" type="submit" value="">
+                  <span class="sb-icon-search"> </span>
+                </form>
+              </div>
+            </div>
+            
+        </div>
+        <div class="clear"> </div>
+      </div>
+    </div>
 </div>

@@ -4,9 +4,7 @@ angular.module('lodgiApp.controllers.signin', ['lodgiApp.services.login'])
   .controller('SigninCtrl', ['$scope', 'loginService', '$location',
     function($scope, loginService, $location) {
        
-       if (!!$scope.auth) {
-         $location.path('/');
-      }
+     
 
       $scope.$on('angularFireAuth:login', function () {
           $location.path('/');

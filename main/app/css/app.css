@@ -28,3 +28,24 @@ footer p{
   display: inline;
   list-style-type: none;
 }
+
+.slide_content_wrap {
+  top: 400px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  margin-left: -360px;
+}
+
+.slide_content_wrap > .description, .title { 
+      font-size:  24px;
+      font-weight: 500;
+      font-family: Arial;
+      color: #FFF;
+      text-align: center;
+}
+
+.slide_content_wrap > .title { 
+      font-size: 3em;
+      padding: 5px;
+}
