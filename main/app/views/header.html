@@ -23,11 +23,18 @@
   </ul> -->
   <div class="top-header" id="header" ng-controller="HeaderController">
         <div class="wrap">
-        <div class="top-header-left">
+        <div class="top-header-left" ng-hide="auth">
           <ul >
             <li><a href="#/signin"><span> </span> User Login</a></li>
-            <li><a href="#"><span> </span> Admin Login</a></li>
-            <li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="#"> Register</a></li>
+            <li ng-hide ng-show="auth"><p><span> </span> Welcome, {{user.name}}</p></li>
+            <li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="#/signup"> Register</a></li>
+            <div class="clear"> </div>
+          </ul>
+        </div>
+        <div class="top-header-left" ng-hide="!auth">
+          <ul >
+            <li><a href="#/signin"  ng-click="logout();"><span> </span> Logout</a></li>
+            <li ng-hide ng-show="auth"><p><span> </span> Welcome, {{user.name}}</p></li>
             <div class="clear"> </div>
           </ul>
         </div>
@@ -53,7 +60,7 @@
         <div class="top-nav">
             <ul class="flexy-menu thick orange">
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="bookings.html">Bookings</a>
+              <li><a href="#/leagues">Bookings</a>
                 <ul>
                 <li><a href="#">Dropdown item</a></li>
                 <li><a href="#">Dropdown item</a></li>
