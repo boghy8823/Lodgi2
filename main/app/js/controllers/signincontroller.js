@@ -9,7 +9,8 @@ angular.module('lodgiApp.controllers.signin', ['lodgiApp.services.login'])
       }
 
       $scope.$on('angularFireAuth:login', function () {
-        $location.path('/');
+          $location.path('/');
+          console.log("Logged in scope", $scope.email);
       })
 
       $scope.email = null;

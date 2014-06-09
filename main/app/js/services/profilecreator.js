@@ -7,6 +7,7 @@ angular.module('lodgiApp.services.profileCreator', [])
         if( callback ) {
           callback(err);
           $rootScope.$apply();
+          $rootScope.$broadcast("profileCreated");
         }
       });
     }

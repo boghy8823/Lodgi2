@@ -1,19 +1,26 @@
-<div data-ng-controller="LeaguesController" data-ng-init="findOneLeague()">
+<div data-ng-controller="LeaguesController" data-ng-init="findOneRoom()">
   <form class="form-horizontal">
     <div class="control-group">
       <label class="control-label" for="name">Name</label>
       <div class="controls">
-        <input type="text" data-ng-model="league.name" id="name" placeholder="Name">
+          <input type="text" data-ng-model="rooms.name" id="name" placeholder="Name"><br />
+          <input type="text" data-ng-model="rooms.type" id="type" placeholder="Room type"><br />
+          <input type="text" data-ng-model="rooms.capacity" id="capacity" placeholder="Capacity"><br />
+          <input type="text" data-ng-model="rooms.facilities" id="facilities" placeholder="Facilities"><br />
+          <input type="text" data-ng-model="rooms.pictures" id="pictures" placeholder="Pictures"><br />
+          <input type="text" data-ng-model="rooms.description" id="description" placeholder="Description"><br />
+          <input type="text" data-ng-model="rooms.price" id="price" placeholder="Price"><br />
+         
       </div>
     </div>
     <div class="control-group">
       <div class="controls">
-        <button data-ng-click="createLeague()" data-ng-show="!leagueId">Create League</button>
+        <button data-ng-click="createLeague()" data-ng-show="!leagueId">Add new room</button>
       </div>
     </div>
     <div class="control-group">
       <div class="controls">
-        <a href="#/leagues">View all leagues</a>
+        <a href="#/leagues">View all Rooms</a>
       </div>
     </div>
   </form>

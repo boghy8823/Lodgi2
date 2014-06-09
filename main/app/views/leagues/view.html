@@ -1,6 +1,13 @@
- <div data-ng-controller="LeaguesController" data-ng-init="findOneLeague()">
-    <h2>{{ league.name }}</h2>
-    <p><strong>Commissioner: </strong>{{ league.commissionerId }}</p>
+ <div data-ng-controller="LeaguesController" data-ng-init="findOneRoom()">
+    <h2>{{ rooms.name }}</h2>
+    <p><strong>Room type: </strong>{{ rooms.type }}</p>
+     <p><strong>Room Capacity: </strong>{{ rooms.capacity }}</p>
+     <p><strong>Facilities: </strong>{{ rooms.facilities }}</p>
+     <p><strong>Description: </strong>{{ rooms.description }}</p>
+     <p><strong>Price: </strong>{{ rooms.price }}</p>
     <br>
-    <a href="#/leagues">View all leagues</a>
+     <input type="text" data-ng-model="rooms.bookersName" id="user" placeholder="Your Name"><br />
+     <input type="text" data-ng-model="rooms.date" id="date" placeholder="Date interval"><br />
+     <button data-ng-click="bookItFunc();">Book it</button><br />
+    <a href="#/leagues">View all rooms</a>
   </div>

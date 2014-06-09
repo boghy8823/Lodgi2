@@ -6,9 +6,12 @@ angular.module('lodgiApp.services.firebaseRefs', [])
         return {
             leagues: function () {
                 return new Firebase(FBURL + '/leagues');
-            }
-        , users: function () {
-            return new Firebase(FBURL + '/users');
-        }
+            },
+            users: function () {
+                return new Firebase(FBURL + '/users');
+            },
+            rooms: function () {
+                return new Firebase(FBURL + '/rooms');
+            },
         }
     }])

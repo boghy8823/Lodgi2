@@ -6,21 +6,44 @@ angular.module('lodgiApp.services.leagues', ['lodgiApp.services.firebaseRefs'])
         console.log("League Service");
         return {
             collection: function (cb) {
-                return angularFireCollection(FireRef.leagues(), cb);
+                return angularFireCollection(FireRef.rooms(), cb);
             }
-        , find: function (leagueId) {
-            return FireRef.leagues().child('/' + leagueId);
+        , find: function (roomId) {
+            return FireRef.rooms().child('/' + roomId);
         }
-        , create: function (league, commissioner) {
-            return FireRef.leagues().push({
-                name: league.name,
-                commissionerId: commissioner.id,
-                fantasyTeams: []
+        , findMyRoom: function () {
+            var MyRoom = [];
+            for (var i = 0; i <= FireRef.rooms.length; i++) {
+                //arreyM[i]['name'] = $scope.newJson[i].name;
+                //arreyM[i]['pic'] = $scope.newJson[i].pic
+                //arreyM[i]['pic'] = $scope.newJson[i].vote;
+                console.log("This is iterator", i);
+            }
+        }
+          
+        , create: function (rooms, commissioner) {
+            return FireRef.rooms().push({
+                name: rooms.name,
+                type: rooms.type,
+                capacity: rooms.capacity,
+                facilities: rooms.facilities,
+                pictures: rooms.pictures,
+                description: rooms.description,
+                price: rooms.price,
+                booked: false,
+                user: null,
+                bookersName: null,
             }).name();
         }
-        , removeLeague: function (leagueId) {
-            var league = FireRef.leagues().child('/' + leagueId)
-            league.remove();
+        , updateStatus: function (id) {
+           // var room = FireRef.rooms().child('/' + id);
+            //room.update({ booked: true });
+            console.log("Room refer", FireRef);
+            console.log("Room refer", id );
+        }
+        , removeRoom: function (roomId) {
+            var room = FireRef.rooms().child('/' + roomId)
+            room.remove();
         }
         }
     }])

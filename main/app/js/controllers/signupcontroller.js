@@ -37,7 +37,8 @@ angular.module('lodgiApp.controllers.signup', [])
             else {
               $scope.login(function(err) {
                 if( !err ) {
-                  loginService.createProfile(user.id, $scope.name, user.email);
+                    loginService.createProfile(user.id, $scope.name, user.email);
+
                 }
               });
             }

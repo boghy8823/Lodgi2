@@ -3,6 +3,6 @@
 angular.module('lodgiApp.controllers.nfl', ['lodgiApp.services.nfl'])
 	.controller('NFLController', ['$scope', '$routeParams', 'ROOMS', 
 		function($scope, $routeParams, ROOMS) {
-		    $scope.roomsDetails = ROOMS.details;
-			$scope.roomDetails = ROOMS.details[$routeParams['nflTeamId']];
+		    $scope.description = ROOMS.description;
+			//$scope.description = ROOMS.description[$routeParams['roomId']];
 		}]);

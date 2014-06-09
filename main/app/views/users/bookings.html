@@ -1,8 +1,8 @@
- <div data-ng-controller="LeaguesController" data-ng-init="findRooms()">
-  <h2>Leagues</h2>
-  <h3>All Leagues</h3>
+ <div data-ng-controller="LeaguesController" data-ng-init="findMyRoom()" >
+  <h2>Bookings</h2>
+  <h3>All My Bookings</h3>
   <ul class="unstyled">
-    <li data-ng-repeat="room in rooms">
+    <li data-ng-repeat="room in rooms ">
       <a href="#/leagues/{{ room.$id }}">{{room.name}}</a>
         <a href="#/leagues/{{ room.$id }}">{{room.type}}</a>
         <a href="#/leagues/{{ room.$id }}">{{room.capacity}}</a>
@@ -10,10 +10,9 @@
         <a href="#/leagues/{{ room.$id }}">{{room.pictures}}</a>
         <a href="#/leagues/{{ room.$id }}">{{room.description}}</a>
         <a href="#/leagues/{{ room.$id }}">{{room.price}}</a>
-     (<a href="#/leagues/{{ room.$id }}/edit">Edit</a>)
-     (<a href="" data-ng-click="removeRoom('{{ room.$id }}')" >Remove</a>)
+        
     </li>
   </ul> 
   <br>
-  <a href="#/leagues/create">Create a new league</a>
+ <a href="#/leagues">Book another room</a>
 </div>
