@@ -1,26 +1,34 @@
 <div data-ng-controller="LeaguesController" data-ng-init="findOneRoom()">
-  <form class="form-horizontal">
+  
+     <form class="form-horizontal add-new-form">
     <div class="control-group">
-      <label class="control-label" for="name">Name</label>
+     <div class="add-new-title">Add a new room</div>
       <div class="controls">
+          <label class="control-label" for="name">Name</label>
           <input type="text" data-ng-model="rooms.name" id="name" placeholder="Name"><br />
+          <label class="control-label" for="Type">Room Type</label>
           <input type="text" data-ng-model="rooms.type" id="type" placeholder="Room type"><br />
+          <label class="control-label" for="capacity">Capacity</label>
           <input type="text" data-ng-model="rooms.capacity" id="capacity" placeholder="Capacity"><br />
+          <label class="control-label" for="facilities">Facilities</label>
           <input type="text" data-ng-model="rooms.facilities" id="facilities" placeholder="Facilities"><br />
+          <label class="control-label" for="pictures">Pictures</label>
           <input type="text" data-ng-model="rooms.pictures" id="pictures" placeholder="Pictures"><br />
+          <label class="control-label" for="description">Description</label>
           <input type="text" data-ng-model="rooms.description" id="description" placeholder="Description"><br />
+          <label class="control-label" for="Price">Price</label>
           <input type="text" data-ng-model="rooms.price" id="price" placeholder="Price"><br />
          
       </div>
     </div>
     <div class="control-group">
       <div class="controls">
-        <button data-ng-click="createLeague()" data-ng-show="!leagueId">Add new room</button>
+        <div  class="add-new-button" data-ng-click="createLeague()" data-ng-show="!leagueId">Add new room</div>
       </div>
     </div>
     <div class="control-group">
       <div class="controls">
-        <a class = "book-button-list2" href="#/leagues">View all Rooms</a>
+        <a class = "book-button-list3" href="#/leagues">View all Rooms</a>
       </div>
     </div>
   </form>

@@ -27,7 +27,7 @@ angular.module('lodgiApp.services.leagues', ['lodgiApp.services.firebaseRefs'])
                 type: rooms.type,
                 capacity: rooms.capacity,
                 facilities: rooms.facilities,
-                pictures: rooms.pictures,
+                pictures: null,
                 description: rooms.description,
                 price: rooms.price,
                 booked: false,
