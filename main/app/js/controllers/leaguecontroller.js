@@ -9,6 +9,11 @@ angular.module('lodgiApp.controllers.leagues', ['lodgiApp.services.leagues'])
         $scope.leagueId = $routeParams.leagueId;
         $scope.roomId = $routeParams.roomId;
 
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
        
         $scope.findLeagues = function () {
             $scope.leagues = Leagues.collection();
