@@ -341,3 +341,61 @@ input[type=text]:focus, textarea:focus {
     left: -100px;
     top: -2em;
 }
+
+.book-button-list3 {
+    padding: 6px 14px 6px 14px;
+    background: #66d5b4;
+    color: #FFF;
+    margin-left: -60%;
+    position:relative;
+    top:-2em;
+}
+.add-new-form {
+    position:relative;
+    margin-left:50%;
+    left: -100px;
+
+}
+
+input#name {    
+    margin-left: 43px;
+}
+
+input#type {
+    margin-left: 4px;
+}
+
+input#capacity {
+    margin-left: 25px;
+}
+
+input#facilities {  
+    margin-left: 24px;
+}
+
+input#pictures {
+    margin-left: 26px;
+}
+
+input#price {
+    margin-left: 51px;
+}
+
+.add-new-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-new-button {
+     width: 120px;
+    padding: 6px 14px 6px 14px;
+    background: #18adf2;
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.add-new-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
