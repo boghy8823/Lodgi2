@@ -196,7 +196,7 @@ footer p{
 .room-pictures {
     width:250px;
     height: 250px;
-    background-image: url('../images/p5.jpg');
+    background-image: url('../images/pozecamere/camera_normala1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     border: 5px solid #edf4f2;
@@ -246,10 +246,17 @@ ul.facilities-list {
     position: relative;
     top: -7em;
     padding: 6px 14px 6px 14px;
-    background: #298ff4;
+    background: #66d5b4;
     color: #FFF;
 }
 
     .book-button-list:hover {
         opacity: 0.7;
-    }
+}
+
+.book-button-list2 { 
+padding: 6px 14px 6px 14px;
+background: #66d5b4;
+color: #FFF;
+margin-left: 20px;
+}
