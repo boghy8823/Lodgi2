@@ -283,6 +283,7 @@ ul.facilities-list {
 
 .book-now-form {
     margin-left: 15px;
+    max-width: 65%;
 }
     .book-now-form > .book-button-detail {
              padding: 6px 14px 6px 14px;
@@ -303,6 +304,10 @@ ul.facilities-list {
         .book-now-form > a:hover {
             opacity: 0.7;
         }
+    .book-now-form > input {
+        min-height: 30px;
+        width:189px;
+    }
 .otherwise {
     color:#6a6a6b;
     font-size:16px;

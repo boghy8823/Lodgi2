@@ -47,7 +47,12 @@
          </div>
          <div class="book-now-form">
              <input type="text" data-ng-model="rooms.bookersName" id="user" placeholder="Your Name"><br />
-             <input type="text" data-ng-model="rooms.date" id="date" placeholder="Date interval"><br />
+             <!--<input type="text"  pickadate  data-ng-model="rooms.date" id="date" placeholder="Date interval" ><br />-->
+             <br />
+             <h3>Pick the date for your stay</h3> 
+             <br />
+             <div date-range start="start" end="end"></div>
+            <!--<input type="datetime" date-time ng-model="start"ng-required="true">-->
              <div class="book-button-detail" data-ng-click="bookItFunc();">Book it</div><br />
              <p class="otherwise">Or, </p><br />
              <a href="#/leagues">View all rooms</a>
