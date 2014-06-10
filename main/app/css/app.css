@@ -300,6 +300,9 @@ ul.facilities-list {
         font-weight:600;
         color:#727272;
     }
+        .book-now-form > a:hover {
+            opacity: 0.7;
+        }
 .otherwise {
     color:#6a6a6b;
     font-size:16px;
@@ -326,9 +329,8 @@ input[type=text]:focus, textarea:focus {
 }
 
 .book-button-list2 { 
-padding: 6px 14px 6px 14px;
-background: #66d5b4;
-color: #FFF;
-margin-left: 20px;
-
+    padding: 6px 14px 6px 14px;
+    background: #66d5b4;
+    color: #FFF;
+    margin-left: 20px;
 }
