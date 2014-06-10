@@ -1,13 +1,59 @@
  <div data-ng-controller="LeaguesController" data-ng-init="findOneRoom()">
-    <h2>{{ rooms.name }}</h2>
+    <!--<h2>{{ rooms.name }}</h2>
     <p><strong>Room type: </strong>{{ rooms.type }}</p>
      <p><strong>Room Capacity: </strong>{{ rooms.capacity }}</p>
      <p><strong>Facilities: </strong>{{ rooms.facilities }}</p>
      <p><strong>Description: </strong>{{ rooms.description }}</p>
      <p><strong>Price: </strong>{{ rooms.price }}</p>
     <br>
+<<<<<<< HEAD
      <input type="text" data-ng-model="rooms.bookersName" id="user" placeholder="Your Name"><br />
      <input type="text" data-ng-model="rooms.date" id="date" placeholder="Date interval"><br />
      <button data-ng-click="bookItFunc();">Book it</button><br />
     <a class = "book-button-list2" href="#/leagues">View all rooms</a>
+=======
+      <input type="text" data-ng-model="rooms.bookersName" id="user" placeholder="Your Name"><br />
+        <input type="text" data-ng-model="rooms.date" id="date" placeholder="Date interval"><br />
+        <button data-ng-click="bookItFunc();">Book it</button><br />
+        <a href="#/leagues">View all rooms</a>-->
+     <div class="container-book-room">
+        <div class="left-content-room">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="images/boat.jpg" />
+                </li>
+                <li>
+                  <img src="images/boat.jpg" />
+                </li>
+                <li>
+                  <img src="images/boat.jpg" />
+                </li>
+                <li>
+                  <img src="images/boat.jpg" />
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="right-content-room">
+            <h2>{{rooms.name}}</h2>
+         <div class="facilities">
+            <p><span class="boldType"> Room type:  </span>{{ rooms.type }}</p>
+            <p><span  class="boldType"> Room Capacity:  </span>{{ rooms.capacity }}</p>
+            <p><span  class="boldType"> Facilities:  </span>{{ rooms.facilities }}</p>
+            <p><span  class="boldType"> Description:  </span>{{ rooms.description }}</p>
+            <p><span  class="boldType"> Price:  </span>{{ rooms.price }}</p>
+            <br>
+         </div>
+         <div class="book-now-form">
+             <input type="text" data-ng-model="rooms.bookersName" id="user" placeholder="Your Name"><br />
+             <input type="text" data-ng-model="rooms.date" id="date" placeholder="Date interval"><br />
+             <div class="book-button-detail" data-ng-click="bookItFunc();">Book it</div><br />
+             <p class="otherwise">Or, </p><br />
+             <a href="#/leagues">View all rooms</a>
+
+         </div>
+        </div>
+    </div>
+
   </div>
