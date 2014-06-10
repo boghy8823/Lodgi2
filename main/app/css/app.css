@@ -328,9 +328,16 @@ input[type=text]:focus, textarea:focus {
 
 }
 
-.book-button-list2 { 
+.book-button-list2 {
     padding: 6px 14px 6px 14px;
     background: #66d5b4;
     color: #FFF;
     margin-left: 20px;
+    padding: 6px 14px 6px 14px;
+    background: #66d5b4;
+    color: #FFF;
+    margin-left: 50%;
+    position: relative;
+    left: -100px;
+    top: -2em;
 }
