@@ -334,7 +334,6 @@ input[type=text]:focus, textarea:focus {
     color: #FFF;
     margin-left: 20px;
     padding: 6px 14px 6px 14px;
-    background: #66d5b4;
     color: #FFF;
     margin-left: 50%;
     position: relative;
@@ -389,7 +388,7 @@ input#price {
 .add-new-button {
      width: 120px;
     padding: 6px 14px 6px 14px;
-    background: #18adf2;
+    background: #66d5b4;
     margin-left: 13%;
     margin-top: 5%;
     margin-bottom: 5%;
