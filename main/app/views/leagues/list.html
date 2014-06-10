@@ -1,19 +1,27 @@
  <div data-ng-controller="LeaguesController" data-ng-init="findRooms()">
-  <h2>Leagues</h2>
-  <h3>All Leagues</h3>
-  <ul class="unstyled">
-    <li data-ng-repeat="room in rooms">
+ 
+  <div lass="bookings-container">
+    <div class="individual-room" data-ng-repeat="room in rooms">
       <a href="#/leagues/{{ room.$id }}">{{room.name}}</a>
-        <a href="#/leagues/{{ room.$id }}">{{room.type}}</a>
-        <a href="#/leagues/{{ room.$id }}">{{room.capacity}}</a>
-        <a href="#/leagues/{{ room.$id }}">{{room.facilities}}</a>
-        <a href="#/leagues/{{ room.$id }}">{{room.pictures}}</a>
-        <a href="#/leagues/{{ room.$id }}">{{room.description}}</a>
-        <a href="#/leagues/{{ room.$id }}">{{room.price}}</a>
-     (<a href="#/leagues/{{ room.$id }}/edit">Edit</a>)
-     (<a href="" data-ng-click="removeRoom('{{ room.$id }}')" >Remove</a>)
-    </li>
-  </ul> 
+       <div class="details-container">
+           <div class="room-pictures" href="#/leagues/{{ room.$id }}">{{room.pictures}}</div>
+           
+           <div class="type-capacity">
+               <ul class="facilities-list"> 
+                    <li class="room-type" href="#/leagues/{{ room.$id }}">{{room.type}}</li>
+                    <li class="room-capacity" href="#/leagues/{{ room.$id }}">{{room.capacity}}</li>
+                    <li class="room-facilities" href="#/leagues/{{ room.$id }}">{{room.facilities}}</li>
+                    <li class="room-price" href="#/leagues/{{ room.$id }}">{{room.price}}</li>    
+               </ul>
+              
+           </div>
+            <div class="room-description" href="#/leagues/{{ room.$id }}">{{room.description}}</div>
+           <a class="book-button-list" href="#/leagues/{{ room.$id }}">Book It</a>
+       </div>
+     <!--(<a href="#/leagues/{{ room.$id }}/edit">Edit</a>)-->
+     <!--(<a href="" data-ng-click="removeRoom('{{ room.$id }}')" >Remove</a>)-->
+    </div>
+  </div> 
   <br>
-  <a href="#/leagues/create">Create a new league</a>
+  <a href="#/leagues/create">Add a new room</a>
 </div>
