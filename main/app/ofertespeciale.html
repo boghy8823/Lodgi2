@@ -1,0 +1,279 @@
+		<!doctype html>
+<html lang="en" ng-app="lodgiApp">
+  <head>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+    <link href="css/fwslider.css" rel='stylesheet' type='text/css' />
+    <link href="css/jquery-ui.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <header data-ng-include="'views/header.html'" ></header>
+   
+		<script src="http://static.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+    
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-fire/angularfire.js"></script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+  
+    <script src="lib/jquery/jquery.bxslider.js"></script>
+    <script src="lib/jquery/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="lib/jquery/flexy-menu.js"></script>
+    <script src="lib/jquery/classie.js"></script>
+    <script src="lib/jquery/jquery.flexisel.js"></script>
+    <script src="lib/jquery/modernizr.custom.js"></script>
+    <script src="lib/jquery/uisearch.js"></script>
+      <script src="lib/jquery/fwslider.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+
+    <script src="js/controllers/headercontroller.js"></script>
+    <script src="js/controllers/leaguecontroller.js"></script>
+    <script src="js/controllers/nflcontroller.js"></script>
+    <script src="js/controllers/signincontroller.js"></script>
+    <script src="js/controllers/signupcontroller.js"></script>
+    
+      
+    <script src="js/services/firerefservice.js"></script>
+    <script src="js/services/leagueservice.js"></script>
+    <script src="js/services/loginservice.js"></script>
+    <script src="js/services/nflservice.js"></script>
+    <script src="js/services/profilecreator.js"></script>
+	
+		<!---start-content---->
+<!----start-offers---->
+        <div class="offers">
+
+            <!-- start content_slider -->
+            <!-- FlexSlider -->
+             <!-- jQuery -->
+              <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+              <!-- FlexSlider -->
+              <script defer src="lib/jQuery/jquery.flexslider.js"></script>
+              <script type="text/javascript">
+                $(function(){
+                  SyntaxHighlighter.all();
+                });
+                $(window).load(function(){
+                  $('.flexslider').flexslider({
+                    animation: "slide",
+                    animationLoop: true,
+                    itemWidth:250,
+                    itemMargin: 5,
+                    start: function(slider){
+                      $('body').removeClass('loading');
+                    }
+                  });
+                });
+              </script>
+            <!-- Place somewhere in the <body> of your page -->
+                 <section class="slider">
+                <div class="flexslider carousel">
+                  <ul class="slides">
+                    <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_normala1.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Normal Room</a></h4>
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_normala2.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Normal Room</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_normala3.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Normal Room</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_vedere_mare1.jpg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Room with sea View</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                    <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_vedere_mare2.jpg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Room with sea View</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_vedere_mare3.jpg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Room with sea View</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/camera_vedere_mare4.jpg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Room with sea View</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/suite1.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Suite</a></h4>
+                                   
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                     <li onclick="location.href='#';">
+                        <img src="images/pozecamere/suite2.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Suite</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                     <li onclick="location.href='#';">
+                        <img src="images/pozecamere/suite3.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Suite</a></h4>
+                                    
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                         <li onclick="location.href='#';">
+                        <img src="images/pozecamere/suite4.jpeg" />
+                        <!----place-caption-info---->
+                        <div class="caption-info">
+                             <div class="caption-info-head">
+                                <div class="caption-info-head-left">
+                                    <h4><a href="#">Suite</a></h4>
+                                    <
+                                </div>
+                                <div class="caption-info-head-right">
+                                    <span> </span>
+                                </div>
+                                <div class="clear"> </div>
+                             </div>
+                        </div>
+                         <!----//place-caption-info---->
+                        </li>
+                    
+                  </ul>
+                </div>
+              </section>
+              <!-- //End content_slider -->
+
+		<!----//End-content---->
+		
+		
+		<div class="footer" data-ng-include="'views/footer.html'"></div>
+  </body>
+</html>
