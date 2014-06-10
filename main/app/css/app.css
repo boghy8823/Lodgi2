@@ -65,3 +65,119 @@ footer p{
   color:#2BD5B4 !important;
 }
 
+#wrapper
+  {
+    position: relative;
+    padding: 5em 0em 7em 0em;
+    background: #FFF;
+  }
+
+
+/*********************************************************************************/
+/* 4-column                                                                      */
+/*********************************************************************************/
+
+  .box1,
+  .box2,
+  .box3,
+  .box4
+  {
+    width: 235px;
+  }
+  
+  .box1,
+  .box2,
+  .box3,
+  {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .box4
+  {
+    float: right;
+  }
+  
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+  .boxA,
+  .boxB,
+  .boxC
+  {
+    width: 382px;
+  }
+
+  .boxA,
+  .boxB
+  {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .boxC
+  {
+    float: right;
+  }
+
+/*********************************************************************************/
+/* 2-column                                                                      */
+/*********************************************************************************/
+
+  .tbox1,
+  .tbox2
+  {
+    width: 575px;
+  }
+  
+  .tbox1
+  {
+    float: left;
+  }
+
+  .tbox2
+  {
+    float: right;
+  }
+
+  .container2
+  {
+    overflow: hidden;
+    margin: 0em auto;
+    width: 1200px;
+  }
+
+  /*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+  .button
+  {
+    display: inline-block;
+    padding: 1em 2em 1em 2em;
+    letter-spacing: 0.10em;
+    margin-top: 2em;
+    padding: 1.40em 3em;
+    border: 2px solid rgba(255,255,255,1);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFF;
+  }
+  
+  .button-alt
+  {
+    padding: 1em 2em;
+    border-color: rgba(0,0,0,.8);
+    color: rgba(0,0,0,.8);
+  }
+
+  #three-column .fa
+  {
+    display: block;
+    padding: 1em 0em;
+    color: rgba(0,0,0,1);
+    font-size: 2em;
+  }
