@@ -600,6 +600,10 @@ body{
 .pin1 span{
 	background: url(../images/footer-social-isons.png) no-repeat -141px 0px;
 }
+.git1 span{
+	background: url(../images/GitHub_Logo.png); 
+
+}
 /*--------social simptip--------*/
 [data-tooltip] {
 	position: relative;
