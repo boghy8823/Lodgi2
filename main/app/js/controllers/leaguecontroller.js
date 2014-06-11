@@ -15,6 +15,13 @@ angular.module('lodgiApp.controllers.leagues', ['lodgiApp.services.leagues'])
             });
       
        
+            $scope.dateOptions = {
+                changeYear: true,
+                changeMonth: true,
+                yearRange: '1900:-0'
+            };
+            $('.main-navigation li').removeClass("active");
+            $('.bookings-nav').addClass('active');
         $scope.findLeagues = function () {
             $scope.leagues = Leagues.collection();
         }

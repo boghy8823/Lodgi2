@@ -9,5 +9,5 @@ var app = angular.module('lodgiApp',
   , 'lodgiApp.controllers.nfl'
   , 'lodgiApp.controllers.leagues'
   , 'lodgiApp.controllers.specialOfferController'
-  , 'firebase', 'ui.bootstrap', 'ngRoute']
+  , 'firebase', 'ui.bootstrap', 'ngRoute', 'datePicker']
   )

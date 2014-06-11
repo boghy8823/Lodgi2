@@ -10,6 +10,9 @@ angular.module('lodgiApp.controllers.specialOfferController', [])
             animationLoop: true,
             itemWidth: 250,
             itemMargin: 5,
-            
         });
+            
+            
+        $('.main-navigation li').removeClass("active");
+        $('.oferte-nav').addClass('active');
     }])
